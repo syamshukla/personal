@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
     title: "syamshukla.tech",
-    description: "Co-founder of unkey.dev and founder of planetfall.io",
+    description:
+      "Co-founder of unkey.dev and founder of planetfall.io",
     url: "https://syamshukla.tech",
     siteName: "syamshukla.tech",
     images: [
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "syamshukla",
+    title: "Chronark",
     card: "summary_large_image",
   },
   icons: {
@@ -65,9 +66,8 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={`bg-black ${
-          process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-        }`}
+        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+          }`}
       >
         {children}
       </body>
